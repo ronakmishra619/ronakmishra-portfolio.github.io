@@ -535,4 +535,5 @@ button[type="submit"]:hover {
   color: white;
   text-align: center; /* Center-align the footer content */
   padding: 10px;
+  border-radius: 15px;
 }
