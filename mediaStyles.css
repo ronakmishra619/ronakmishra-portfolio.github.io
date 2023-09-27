@@ -1,0 +1,166 @@
+/* Center-align the video and audio elements */
+video,
+audio {
+  display: block;
+  margin: 0 auto;
+}
+
+/* for web tech images using floats */
+
+/* Style for columns */
+.column {
+  float: left;
+  width: 33.33%; /* Adjust this width as per your layout */
+  box-sizing: border-box;
+}
+
+/* Style for images within columns */
+.column img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Clear floats to prevent layout issues */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Center align the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center vertically */
+}
+
+/* Style for columns */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  width: 33.33%; /* Adjust this width as per your layout */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Style for images within columns */
+.column img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: Add spacing between columns */
+.column:not(:last-child) {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+/*--------------------------------------------------*/
+
+/** Media queries */
+/* Default styles for screens larger than 768px */
+@media (min-width: 769px) {
+  /* Add your CSS rules for screens larger than 768px here */
+
+  /* For the header */
+  header {
+    padding: 20px; /* Increase padding for larger screens */
+  }
+
+  /* For the navigation menu */
+  nav ul li {
+    margin-right: 30px; /* Increase margin between navigation items */
+  }
+
+  /* Customize the paragraph font size for sections */
+  #about p,
+  #Certifications p,
+  #contact p,
+  #Skills p,
+  #NewsLetter p,
+  #summaryDetails p {
+    font-size: 24px; /* Increase font size for larger screens */
+  }
+
+  /* Adjust the table width for larger screens */
+  table {
+    width: 70%; /* Adjust table width as needed */
+  }
+}
+/*--------------------------------------------------*/
+
+/* Tablet-specific styles for screens up to 768px wide */
+@media (max-width: 768px) {
+  /* Add your CSS rules for tablets (up to 768px) here */
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  /* For the header */
+  header {
+    padding: 15px; /* Adjust padding for tablets */
+  }
+
+  /* For the navigation menu */
+  nav ul li {
+    margin-right: 20px; /* Adjust margin for tablets */
+  }
+
+  /* Customize the paragraph font size for tablets */
+  #about p,
+  #Certifications p,
+  #contact p,
+  #Skills p,
+  #NewsLetter p,
+  #summaryDetails p {
+    font-size: 20px; /* Adjust font size for tablets */
+  }
+
+  /* Adjust the table width for tablets */
+  table {
+    width: 80%; /* Adjust table width as needed for tablets */
+  }
+}
+
+/*--------------------------------------------------*/
+
+/* Smartphone-specific styles for screens up to 365px wide */
+@media (max-width: 365px) {
+  /* Add your CSS rules for smartphones (up to 365px) here */
+
+  /* For the header */
+  header {
+    padding: 10px; /* Adjust padding for smartphones */
+  }
+
+  /* For the navigation menu */
+  nav ul li {
+    margin-right: 10px; /* Adjust margin for smartphones */
+  }
+
+  /* Customize the paragraph font size for smartphones */
+  #about p,
+  #Certifications p,
+  #contact p,
+  #Skills p,
+  #NewsLetter p,
+  #summaryDetails p {
+    font-size: 18px; /* Adjust font size for smartphones */
+  }
+
+  /* Adjust the table width for smartphones */
+  table {
+    width: 90%; /* Adjust table width as needed for smartphones */
+  }
+  header {
+    padding: 2px;
+  }
+
+  /* Make font sizes even smaller in the navigation menu */
+  nav ul li a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,536 @@
+/* Apply styles to the header */
+header {
+  background-color: #94a684;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  opacity: 0.8;
+}
+body {
+  background-color: #aec3ae;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("BGmove.jpg"); /* Add the background image */
+  opacity: 0.2; /* Adjust opacity as needed (0.5 means 50% opacity) */
+  z-index: -1;
+}
+
+/*   these are for nav settigs**/
+nav ul {
+  list-style-type: none;
+}
+
+/* for the nav items color */
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Set the default text color */
+  font-family: "Arial", sans-serif; /* Set the default font-family */
+  font-size: 18px; /* Set the default font size */
+  transition: transform 0.2s, color 0.2s; /* Add transition for hover effect */
+}
+/* Change text color and scale on hover */
+nav ul li a:hover {
+  color: #d2de32; /* Change text color on hover */
+  transform: scale(1.05); /* Scale up the text on hover */
+  transform: scale(1.1);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Modify text shadow on hover */
+}
+
+/*********************************/
+
+/* To Style the image gallery */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+figure {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 5px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  cursor: pointer; /* Add cursor pointer to indicate interactivity */
+  margin: 10px 0; /* Adjust vertical and horizontal margins */
+  width: calc(25% - 20px); /* Adjust the width for four images per row */
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+figure:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+}
+
+/* Lightbox styles */
+.hidden {
+  display: none;
+}
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+/* Apply styles to the footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+/*--------------------------------------------------*/
+
+/* Add media queries for responsiveness */
+/* Default styles for screens larger than 768px */
+@media (min-width: 769px) {
+  /* Add your CSS rules for screens larger than 768px here */
+
+  /* For the header */
+  header {
+    padding: 20px; /* Increase padding for larger screens */
+  }
+
+  /* For the navigation menu */
+  nav ul li {
+    margin-right: 30px; /* Increase margin between navigation items */
+  }
+
+  /* Customize the paragraph font size for sections */
+  #about p,
+  #Certifications p,
+  #contact p,
+  #Skills p,
+  #NewsLetter p,
+  #summaryDetails p {
+    font-size: 24px; /* Increase font size for larger screens */
+  }
+
+  /* Adjust the table width for larger screens */
+  table {
+    width: 70%; /* Adjust table width as needed */
+  }
+}
+/*--------------------------------------------------*/
+
+/*for 768 */
+/* Tablet-specific styles for screens up to 768px wide */
+@media (max-width: 768px) {
+  /* Add your CSS rules for tablets (up to 768px) here */
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  /* For the header */
+  header {
+    padding: 15px; /* Adjust padding for tablets */
+  }
+
+  /* For the navigation menu */
+  nav ul li {
+    margin-right: 20px; /* Adjust margin for tablets */
+  }
+
+  /* Customize the paragraph font size for tablets */
+  #about p,
+  #Certifications p,
+  #contact p,
+  #Skills p,
+  #NewsLetter p,
+  #summaryDetails p {
+    font-size: 20px; /* Adjust font size for tablets */
+  }
+
+  /* Adjust the table width for tablets */
+  table {
+    width: 80%; /* Adjust table width as needed for tablets */
+  }
+}
+/*--------------------------------------------------*/
+
+/* Smartphone-specific styles for screens up to 365px wide */
+@media (max-width: 365px) {
+  /* Add your CSS rules for smartphones (up to 365px) here */
+
+  /* For the header */
+  header {
+    padding: 10px; /* Adjust padding for smartphones */
+  }
+
+  /* For the navigation menu */
+  nav ul li {
+    margin-right: 10px; /* Adjust margin for smartphones */
+  }
+
+  /* Customize the paragraph font size for smartphones */
+  #about p,
+  #Certifications p,
+  #contact p,
+  #Skills p,
+  #NewsLetter p,
+  #summaryDetails p {
+    font-size: 18px; /* Adjust font size for smartphones */
+  }
+
+  /* Adjust the table width for smartphones */
+  table {
+    width: 90%; /* Adjust table width as needed for smartphones */
+  }
+  header {
+    padding: 2px;
+  }
+
+  /* Make font sizes even smaller in the navigation menu */
+  nav ul li a {
+    font-size: 14px;
+  }
+}
+/*--------------------------------------------------*/
+
+/** all the ids customizations **/
+/** about me */
+
+/* Center-align and customize the "About Me" section */
+/* Customize and add aesthetic features to the "About Me" section */
+/* Customize and add aesthetic features to the "About Me" section */
+#about {
+  text-align: center;
+  background-image: url("BGstatic.jpg"); /* Add a background image */
+  background-size: cover; /* Cover the entire section with the background image */
+  background-position: center; /* Center the background image */
+  padding: 50px; /* Increase padding for spacing */
+  border-radius: 15px; /* Add rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  color: #fff; /* Text color */
+  position: relative; /* Add relative positioning to create a stacking context */
+  opacity: 0.6;
+}
+/* 
+*/
+
+#contact,
+#NewsLetter {
+  color: #fff; /* Text color */
+  background-size: cover; /* Cover the entire section with the background image */
+  background-image: url("BGstatic.jpg"); /* Add a background image */
+
+  background-position: center; /* Center the background image */
+  padding: 50px; /* Increase padding for spacing */
+  border-radius: 15px; /* Add rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  color: #fff; /* Text color */
+  position: relative; /* Add relative positioning to create a stacking context */
+  opacity: 0.6;
+  text-align: center;
+}
+
+#Skills,
+#summaryDetails {
+  color: #fff; /* Text color */
+  background-size: cover; /* Cover the entire section with the background image */
+  background-position: center; /* Center the background image */
+  padding: 50px; /* Increase padding for spacing */
+  border-radius: 15px; /* Add rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  color: #fff; /* Text color */
+  position: relative; /* Add relative positioning to create a stacking context */
+
+  text-align: center;
+}
+
+#about h2,
+#Certifications h2,
+#contact h2,
+#Skills h2,
+#NewsLetter h2,
+#summaryDetails h2 {
+  font-size: 36px; /* Customize the heading font size */
+  margin-bottom: 20px; /* Add space below the heading */
+  transition: color 0.2s; /* Add a transition for color change on hover */
+}
+
+#about h2:hover,
+#Certifications h2:hover,
+#contact h2:hover,
+#Skills h2:hover,
+#NewsLetter h2:hover,
+#summaryDetails h2:hover {
+  color: black; /* Change text color on hover */
+  transform: scale(
+    1.05
+  ); /* Slightly increase scale on hover (makes it appear to come closer) */
+  transform: scale(1.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
+#about p,
+#Certifications p,
+#contact p,
+#Skills p,
+#NewsLetter p,
+#summaryDetails p {
+  font-size: 20px; /* Customize the paragraph font size */
+  line-height: 1.4; /* Adjust line height for better readability */
+  font-size: 20px; /* Customize the paragraph font size */
+  font-family: "cursive", "Arial", sans-serif; /* Specify your preferred font */
+}
+
+/* Add a semi-transparent background overlay for better text readability */
+#about::before,
+#Certifications::before,
+#contact::before,
+#Skills::before,
+#NewsLetter::before,
+#summaryDetails::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: -1;
+  border-radius: 15px;
+}
+
+/* */
+
+/* for certificates */
+
+/** /
+/* Header tags */
+h1 {
+  font-size: 42px; /* Increase the font size */
+  font-family: "cursive", "Helvetica", sans-serif; /* Use a cursive font-family */
+  color: #333; /* Choose a text color that contrasts with your background */
+  text-transform: uppercase; /* Make text uppercase */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+  letter-spacing: 2px; /* Adjust letter spacing if needed */
+  border-radius: 10px; /* Add a border-radius for a curved appearance */
+  padding: 10px 20px; /* Add padding to make it more stylish */
+  background-color: #aec3ae; /* Background color for contrast */
+  display: inline-block; /* Display as an inline-block to respect padding */
+  transform: scale(1); /* Initial scale, no change */
+  transition: transform 0.2s ease; /* Add a transition for smooth effect */
+}
+/* Add a hover effect */
+h1:hover {
+  transform: scale(
+    1.05
+  ); /* Slightly increase scale on hover (makes it appear to come closer) */
+  transform: scale(1.1);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Modify text shadow on hover */
+  opacity: 0.8;
+  color: #176b87;
+}
+
+h2 {
+  font-size: 36px; /* Customize the heading font size */
+  margin-bottom: 20px; /* Add space below the heading */
+  transition: color 0.2s; /* Add a transition for color change on hover */
+  text-align: center;
+}
+
+h2:hover {
+  color: #176b87; /* Change text color on hover */
+  transform: scale(
+    1.05
+  ); /* Slightly increase scale on hover (makes it appear to come closer) */
+  transform: scale(1.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
+/* anchor tag */
+/* Target anchor tags with the "resume-link" class only */
+a.resume-link {
+  float: left;
+
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto; /* Center the anchor tag horizontally */
+  text-align: center; /* Center the text within the anchor tag */
+  font-size: 24px;
+}
+
+/** for contact settings */
+#contact li {
+  font-size: 24px; /* Increase the list item text size */
+  margin-bottom: 10px; /* Add space below each list item */
+}
+#contact a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 24px; /* Increase the link text size */
+  transition: color 0.2s; /* Add a color transition on hover */
+}
+
+#contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+#contact a:hover {
+  color: yellow; /* Change link color on hover */
+}
+
+/** Table style*/
+/* Style the table */
+table {
+  border-collapse: collapse;
+  width: 50%; /* Set the table width */
+  margin: 20px auto; /* Center the table horizontally */
+}
+
+/* Style table header (th) */
+th {
+  background-color: #0078d4; /* Header background color */
+  color: white; /* Header text color */
+  padding: 10px; /* Header cell padding */
+  text-align: left; /* Header text alignment */
+}
+
+/* Style table data (td) */
+td {
+  border: 1px solid #ddd; /* Border for data cells */
+  padding: 10px; /* Data cell padding */
+  text-align: left; /* Data cell text alignment */
+}
+
+/* Style proficiency stars */
+/* This selector is used to style specific data cells containing the star character "⭐" */
+td:contains("⭐") {
+  color: gold; /* Change text color for stars to gold */
+  font-size: 20px; /* Increase star size */
+}
+
+/* Add hover effect for rows */
+/* This selector is used to add a hover effect to table rows */
+tr:hover {
+  background-color: #f5f5f5; /* Hover background color */
+}
+
+/* Style the form container */
+#NewsLetter {
+  text-align: center;
+}
+
+/* Styling form elements and labels */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #0078d4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* for menu */
+/* Style the navigation menu */
+/* Center-align the navigation menu */
+.navigation-footer-container menu {
+  list-style-type: none;
+  padding: 20;
+  margin: 20;
+  text-align: center; /* Center-align the menu items */
+}
+
+.navigation-footer-container menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navigation-footer-container menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navigation-footer-container menu li a:hover {
+  color: #0078d4;
+}
+
+/* Center-align the footer */
+.navigation-footer-container footer {
+  background-color: #333;
+  color: white;
+  text-align: center; /* Center-align the footer content */
+  padding: 10px;
+}
